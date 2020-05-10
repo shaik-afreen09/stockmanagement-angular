@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Stock Management</title>
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,7 +32,42 @@
 </head>
 
 <body>
-  <h1 align="center">Welcome To Drink and Delight Inventory Management System</h1>
+ 	<!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark teal">
+
+    <!-- Navbar brand -->
+    
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    
+          <a class="dropdown-item" routerLink="/rawmaterialTrack">Track RawMaterial Stock</a>
+          <a class="dropdown-item" routerLink="/productTrack"> Track Product Stock</a>
+          
+        
+          <a class="dropdown-item" routerLink="/rawmaterialprocessdate">Set RawMaterial Stock Process Date</a>
+          <a class="dropdown-item" routerLink="/productexitdate">Set Product Stock Exit Date</a>
+          
+       
+          <a class="dropdown-item" routerLink="/rawmaterialupdate">Update RawMaterial Stock</a>
+          <a class="dropdown-item" routerLink="/productupdate">Update Product Stock</a>
+          <button (click)="logout()">Logout</button>
+    
+
+    
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+
 <div class="container">
   <h1> </h1>
 </div>

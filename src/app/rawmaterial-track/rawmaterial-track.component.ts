@@ -21,6 +21,10 @@ export class RawmaterialTrackComponent implements OnInit {
 this.rawservice.getOrder(data.rawid).subscribe((rms)=>{
   
   this.rms=rms;
+  if(rms.orderId==0)
+  this.message=`<center>Please Enter Correct Rawmaterial Id. Entered Rawmaterial id is Invalid'</
+  center>`;
+  else
   this.message=`<h2 style="text-align:justify">Raw Material Stock Details </h2> 
   <table class="table table-striped col-md-6 container">
   <tr>
@@ -64,7 +68,7 @@ this.rawservice.getOrder(data.rawid).subscribe((rms)=>{
   `;
   
 },error=>{
-  alert('Please Enter Correct Rawmaterial Id. Entered Rawmaterial id is Invalid');
+ 
   
   
   

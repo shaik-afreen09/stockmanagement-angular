@@ -1,0 +1,26 @@
+<!-- login -->
+<div class="container pb-5" id="login">
+    <div class="row pb-5 mt-5">
+      <div class="col-md-6 offset-md-3 mt-3">
+        
+        <form class="text-center border border-light p-5" #login="ngForm" (ngSubmit)="dologin(login.value)">
+  
+            <p class="h4 mb-4">Login</p>
+    <p>Enter Username</p>
+    
+    <input type="text" id="" name="username" class="form-control mb-4" placeholder="Enter Username" ngModel>
+            
+    <p>Enter password</p>
+
+            <input type="text" id="" name="password" class="form-control mb-4" placeholder="Enter password" ngModel>
+  
+            <button class="btn teal text-white btn rounded btn-block" type="submit">Submit</button>
+        </form>
+        <div class="center"><a class="dropdown-item" routerLink="/forgot"><button>Forgot Password</button></a>
+        </div>
+      </div>
+    </div>  
+  </div>
+ <div [innerHTML]="message"></div>
+  <!-- login -->
+

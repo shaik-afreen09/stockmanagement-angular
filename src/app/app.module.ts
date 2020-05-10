@@ -17,6 +17,11 @@ import { ProductExitDateComponent } from './product-exit-date/product-exit-date.
 import { RawmaterialUpdateComponent } from './rawmaterial-update/rawmaterial-update.component';
 import { ProductUpdateComponent } from './product-update/product-update.component';
 import { ProductTrackComponent } from './product-track/product-track.component';
+import { AdminComponent } from './admin/admin.component';
+import { ForgotComponent } from './forgot/forgot.component';
+import { HomeComponent } from './home/home.component';
+
+import {LoginComponent} from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +32,11 @@ import { ProductTrackComponent } from './product-track/product-track.component';
     ProductExitDateComponent,
     RawmaterialUpdateComponent,
     ProductUpdateComponent,
-    ProductTrackComponent
+    ProductTrackComponent,
+    AdminComponent,
+    ForgotComponent,
+    HomeComponent,
+    LoginComponent
     
   ],
   imports: [

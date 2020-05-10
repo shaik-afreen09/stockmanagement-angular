@@ -10,7 +10,16 @@ import {RawmaterialUpdateComponent} from './rawmaterial-update/rawmaterial-updat
 //import { ProductTrackComponent } from './rawmaterial-track/rawmaterial-track.component';
 import {  ProductExitDateComponent } from './product-exit-date/product-exit-date.component';
 import { ProductUpdateComponent} from './product-update/product-update.component';
+import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import {ForgotComponent} from './forgot/forgot.component';
+import {HomeComponent} from './home/home.component'
 const routes: Routes = [
+  {
+    path:'',
+    component:HomeComponent,
+
+   children: [
   { path:'productstock', component:ProductStockComponent },
   { path:'rawmaterialstock', component:RawMaterialStockComponent },
 { path:'productTrack', component:ProductTrackComponent},
@@ -18,7 +27,16 @@ const routes: Routes = [
 {path : 'rawmaterialprocessdate',component:RawmaterialProcessDateComponent},
 {path : 'rawmaterialupdate',component:RawmaterialUpdateComponent},
 {path :'productexitdate',component:ProductExitDateComponent},
-{path : 'productupdate',component:ProductUpdateComponent}
+{path : 'productupdate',component:ProductUpdateComponent},
+
+    ]
+  },
+{
+ path:'login',component:LoginComponent 
+},
+{
+  path:'forgot',component:ForgotComponent
+}
 ];
 
 @NgModule({
